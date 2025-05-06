@@ -1,0 +1,319 @@
+div.one {
+    width: 50px;
+    height: 50px;
+    margin: 15px auto;
+    border-radius: 50%;
+    border: 3px solid #e92055;
+    border-left-color: transparent;
+    /* background-color: white; */
+    position: relative;
+    animation: spiner 1s infinite linear;
+}
+
+div.one::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    border-radius: 50%;
+    border: 3px solid #1e90ff;
+    border-right-color: transparent;
+    /* background-color: transparent; */
+    left: -8px;
+    top: -8px;
+}
+
+div.one::before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    border-radius: 50%;
+    border: 3px solid #fcb300;
+    border-top-color: transparent;
+    background-color: transparent;
+    left: -13px;
+    top: -13px;
+}
+
+@keyframes spiner {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+div.one:hover {
+    animation-play-state: paused;
+}
+
+div.two {
+    width: 75px;
+    height: 75px;
+    margin: auto;
+    border-radius: 50%;
+    border: 4px solid black;
+    border-left-color: transparent;
+    background-color: transparent;
+    animation: spiner2 2s infinite linear;
+    animation-play-state: paused;
+
+
+}
+
+.one2 {
+    width: 62px;
+    height: 62px;
+    margin: auto;
+    border-radius: 50%;
+    border: 4px solid #fcb300;
+    border-left-color: transparent;
+    background-color: transparent;
+    animation: spiner3 1.5s infinite linear;
+    animation-play-state: paused;
+    transform: translateY(-76.5px);
+}
+
+.two2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: auto;
+    border: 4px solid #1e90ff;
+    border-left-color: transparent;
+    background-color: transparent;
+    animation: spiner4 1s infinite linear;
+    animation-play-state: paused;
+    transform: translateY(-140.5px);
+}
+
+@keyframes spiner2 {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+@keyframes spiner3 {
+    to {
+        transform: translateY(-76.5px) rotate(1turn);
+    }
+}
+
+@keyframes spiner4 {
+    to {
+        transform: translateY(-140.5px) rotate(1turn);
+    }
+}
+
+.parent {
+    padding: 3%;
+    margin: auto;
+    width: fit-content;
+    height: 90px;
+    background-color: #eee;
+}
+
+.parent:hover .two,
+.parent:hover .two2,
+.parent:hover .one2 {
+    animation-play-state: running;
+}
+
+span {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    border-radius: 50%;
+    background-color: #eee;
+    border: 3px solid black;
+    border-left-color: transparent;
+
+    animation: spiner2 1s infinite linear reverse;
+}
+
+.parent2 {
+    width: 105px;
+    height: 110px;
+    background-color: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.parent2>div:nth-of-type(1),
+.parent2 div:nth-of-type(3),
+.parent2 div:nth-of-type(5),
+.parent2 div:nth-of-type(7) {
+    background-color: black;
+    width: 10px;
+    height: 50px;
+
+}
+
+.parent2 div:nth-of-type(2),
+.parent2 div:nth-of-type(4),
+.parent2 div:nth-of-type(8),
+.parent2 div:nth-of-type(6),
+.parent2 div:nth-of-type(9) {
+    background-color: black;
+    width: 40px;
+    height: 10px;
+}
+
+@keyframes E {
+    0% {
+        transform: translateX(-40PX);
+    }
+
+    2.5% {
+        transform: translateX(-40PX) translateY(50PX);
+    }
+
+    7.5% {
+        transform: translateX(0PX) translateY(50PX);
+    }
+
+    12.5% {
+        transform: translateX(-40PX) translateY(50PX);
+    }
+
+    20% {
+        transform: translateX(-40PX) translateY(100PX);
+    }
+
+    27.5% {
+        transform: translateX(0PX) translateY(100PX);
+    }
+
+    35% {
+        transform: translateX(-40PX) translateY(100PX);
+    }
+
+    42.5% {
+        transform: translateX(-40PX) translateY(0PX);
+    }
+
+    50% {
+        transform: translateX(0PX) translateY(0PX);
+        animation-delay: 2s;
+    }
+
+    100% {
+        transform: translateX(0PX) translateY(0PX);
+    }
+}
+
+.L {
+    visibility: hidden;
+}
+
+@keyframes L {
+    0% {
+        visibility: visible;
+        transform: translate(0);
+    }
+
+    10% {
+        /* visibility: visible; */
+        transform: translate(-40PX, 0PX);
+    }
+
+    20% {
+        /* visibility: visible; */
+        transform: translate(-40PX, -100PX);
+    }
+
+    30% {
+        /* visibility: visible; */
+        transform: translate(-40PX, -100PX);
+        opacity: 80%;
+    }
+
+    35% {
+        /* visibility: visible; */
+        transform: translate(-40PX, -100PX);
+        opacity: 40%;
+
+    }
+
+    40% {
+        /* visibility: visible; */
+        transform: translate(-40PX, -100PX);
+        opacity: 20%;
+
+    }
+
+    45% {
+
+        transform: translate(-40PX, -100PX);
+        opacity: 0%;
+        visibility: hidden;
+
+    }
+
+    48.5% {
+        transform: translate(-40PX, 0PX);
+        visibility: hidden;
+    }
+
+    50% {
+        transform: translate(0PX, 0PX);
+        visibility: hidden;
+
+    }
+
+    100% {
+        transform: translate(0PX, 0PX);
+        visibility: hidden;
+
+    }
+}
+
+div[class="main red"] {
+    color: red;
+
+}
+
+/* OR H.W1 SELECTOR */
+div.main.red {
+    color: red;
+}
+
+.parent3>.child:last-child {
+    color: red;
+}
+
+.parent4 [class]:only-child {
+    color: red;
+
+}
+
+/* or */
+.parent4 .baby:only-child {
+    color: red;
+
+}
+
+.parent6>div[title]:not(.no-need) {
+    color: red;
+}
+
+.parent7> :nth-child(2) [title="Elzero"] {
+    color: red;
+}
+
+.parent8 div:not(.no-need) div:nth-last-of-type(2) {
+    color: red;
+
+}
+
+.parent9 :first-child h3:last-of-type+div {
+    color: red;
+
+}
+
+.parent10 :not(:nth-child(1), :nth-child(4), :nth-child(6), :nth-child(7)) {
+    color: red;
+}

@@ -1,13 +1,12 @@
-<<<<<<< HEAD
-# hello
-### this is test file
+# Zero Web School assignments and coding challenges 
 
+## 📝 Description  
+This repository contains my complete collection of , assignments, and coding challenges completed through the **Zero Web School** program (web platform & YouTube curriculum). All solutions were built from scratch while following their structured learning path, with added personal improvements and custom features.
 
-##### hello-mm
-=======
-# hello
-### this is test file
+## ✨ Key Features  
+-  **100% Hand-Coded** - No templates or copied code  
+- **Progressive Learning** - From basics to intermediate level  
+-  **Tutorial-Based** - YouTube guided with personal enhancements  
 
-
-##### hello-mm#2
->>>>>>> b7c3c6ebe90f6344c84a5ce28445170625326ecc
+##  Technologies  
+`HTML5` `CSS3`  `Git`  

@@ -1,0 +1,240 @@
+@media print {
+    .assign-one {
+        font-size: 40px;
+    }
+}
+
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.parent .PRODUCT {
+    width: 24%;
+    background-color: #eeeeee;
+    margin-right: 1%;
+    text-align: center;
+}
+
+.parent .PRODUCT :first-child {
+    color: #0f9c8f;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 1.25rem;
+}
+
+/* for small screen */
+@media (min-width: 768px) and (max-width: 991px) {
+    .parent {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .parent .PRODUCT {
+        width: 100%;
+        background-color: #eeeeee;
+        margin-bottom: 1%;
+        text-align: center;
+    }
+
+    .parent .PRODUCT :first-child {
+        color: #000000;
+        text-transform: uppercase;
+        font-weight: bolder;
+        font-size: 1.25rem;
+    }
+
+    .parent2 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .parent2 .PRODUCT {
+        margin: 0px;
+        width: 100%;
+        background-color: #eeeeee;
+        margin-bottom: 1%;
+        text-align: center;
+
+    }
+
+    .parent2 .PRODUCT :first-child {
+        color: #000000;
+        text-transform: uppercase;
+        font-weight: bolder;
+        font-size: 1.25rem;
+    }
+}
+
+/* for medieum screen */
+@media (min-width: 992px) and (max-width:1199px) {
+    .parent {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .parent .PRODUCT {
+        width: 48%;
+        background-color: #eeeeee;
+        margin: 1%;
+        text-align: center;
+
+
+    }
+
+    .parent .PRODUCT :first-child {
+        color: red;
+        text-transform: uppercase;
+        font-weight: bolder;
+        font-size: 1.25rem;
+    }
+
+    .parent2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: initial;
+
+    }
+
+    .parent2 .PRODUCT {
+        width: 32%;
+        background-color: #eeeeee;
+        text-align: center;
+    }
+
+    .parent2 .PRODUCT:first-child {
+        width: 100%;
+        margin-bottom: 2%;
+
+    }
+
+    .parent2 .PRODUCT :first-child {
+        color: red;
+        text-transform: uppercase;
+        font-weight: bolder;
+        font-size: 1.25rem;
+    }
+}
+
+/* for large screen */
+@media (min-width: 1200px) {
+
+    .parent {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .parent .PRODUCT {
+        width: 24%;
+        background-color: #eeeeee;
+        margin-right: 1%;
+        text-align: center;
+    }
+
+    .parent .PRODUCT :first-child {
+        color: #0f9c8f;
+        text-transform: uppercase;
+        font-weight: bolder;
+        font-size: 1.25rem;
+    }
+
+    .parent2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .parent2 .PRODUCT:nth-child(1),
+    .parent2 .PRODUCT:nth-child(4) {
+        width: 100%;
+        background-color: #eeeeee;
+        text-align: center;
+    }
+
+    .parent2 .PRODUCT {
+        width: 49%;
+        background-color: #eeeeee;
+        text-align: center;
+        margin-bottom: 1%;
+        margin-right: unset;
+    }
+
+
+    .parent2 .PRODUCT :first-child {
+        color: #0f9c8f;
+        text-transform: uppercase;
+        font-weight: bolder;
+        font-size: 1.25rem;
+    }
+
+
+}
+
+/* frame-work */
+.center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-position {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.circle-100 {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+.circle-200 {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+.arrow {
+    background-color: #dddddd;
+    width: 30%;
+    height: 20px;
+    margin: 40px auto;
+    padding: 30px;
+    position: relative;
+    font-weight: 200;
+    font-size: larger;
+}
+
+.arrow::before {
+    content: "";
+    position: absolute;
+    border: 20px solid;
+    border-color: transparent transparent transparent #dddddd;
+}
+
+.top::before {
+    top: 0%;
+    left: calc(50% - 20px);
+    transform-origin: top left;
+    transform: rotate(-90deg);
+}
+
+.right::before {
+    top: calc(50% - 20px);
+    left: 100%;
+}
+
+.bottom::before {
+    border-color: #dddddd transparent transparent transparent;
+    top: 100%;
+    left: calc(50% - 20px);
+}
+
+.left::before {
+    border-color: transparent #dddddd transparent transparent;
+    top: calc(50% - 20px);
+    right: 100%;
+}

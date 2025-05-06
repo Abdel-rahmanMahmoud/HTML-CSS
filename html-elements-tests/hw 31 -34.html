@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" title="hw 24- 27">
+    <title>hw 28-30</title>
+    <style>
+        body {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="get" target="_blank" novalidate>
+        <div>
+            <label for="TOK"> search</label>
+            <br>
+            <input type="search" placeholder=" Enter A Search Word" id="TOK" autofocus name="search">
+        </div>
+        <div>
+            <label for="cv">upload </label>
+            <br>
+            <input type="file" id="cv" name=" my cv">
+        </div>
+        <div>
+            <label for="user">Url</label>
+            <br>
+            <input type="url" id="user" required name="un">
+        </div>
+        <br>
+        <div>
+            <label for="date">date</label>
+            <input type="date" id="date" value="2023-08-24" name="data">
+        </div>
+        <br>
+        <div>
+            <label for="month">month</label>
+            <input type="month" id="month" value="2023-08" name="month">
+        </div>
+        <hr>
+
+        <br>
+        <input type="submit" value="send ">
+        <input type="reset" value="empty ">
+        <br>
+        <pre>
+            Hello Line One
+            Hello Line Two
+            Hello Line Three
+                  Hello Line Four
+         </pre>
+        <iframe src="https://elzero.org/" width="100%" height="500px"></iframe>
+        <div class="choose-skill">
+            <div class="skill" role="checkbox" aria-labelledby="skillone" tabindex="0">Python</div>
+            <label id="skillone">Skill One</label>
+            <div class="skill" aria-labelledby="Skill Two" tabindex="0">PHP</div>
+            <label id="Skill Two">Skill Two</label>
+            <div class="skill" aria-labelledby="Skill Three" tabindex="0">JavaScript</div>
+            <label id="Skill Three">Skill Three</label>
+        </div>
+        <div class="choose-skill">
+            <div class="skill" role="checkbox" aria-selected="true" aria-labelledby="skillone" tabindex="0">Python</div>
+            <label id="skillone">Skill One</label>
+            <div class="skill" role="checkbox" aria-labelledby="Skill Two" tabindex="0">PHP</div>
+            <label id="Skill Two">Skill Two</label>
+            <div class="skill" role="checkbox" aria-labelledby="Skill Three" tabindex="0">JavaScript</div>
+            <label id="Skill Three">Skill Three</label>
+        </div>
+    </form>
+</body>
+
+</html>

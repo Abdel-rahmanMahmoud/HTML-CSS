@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" title="hw 24- 27">
+    <title>hw 24-27</title>
+</head>
+
+<body>
+    <form action="test.py" target="_blank" method="post" novalidate>
+        <div>
+            <label for="user">Username</label>
+            <br>
+            <input type="text" id="user" required placeholder="your name" name="un">
+        </div>
+        <hr>
+        <div>
+            <label for="pass">password</label>
+            <br>
+            <input type="password" id="pass" placeholder="make strong pass" name="pass">
+        </div>
+        <hr>
+
+        <div>
+            <label for="mail">email</label>
+            <br>
+            <input type="email" id="mail" placeholder="your email" placeholder="ex:xx@nn.com" required name="your name">
+        </div>
+        <hr>
+        <div>
+            <label for="number">mobile number</label>
+            <br>
+            <input type="text" id="number" placeholder="ex:+962780384524" name="mo#">
+        </div>
+        <hr>
+        <div>
+            <label for="sub">subject</label>
+            <br>
+            <input type="text" id="sub" placeholder="subject" name="subje">
+        </div>
+        <div>
+            <label for="num" hidden>number</label>
+            <br>
+            <input type="number" hidden id="num" value="5" name="hidd#">
+        </div>
+        <input type="range" step="50" min="100" max="500" value="400">
+        <br>
+
+        <input type="submit" value="send data">
+        <input type="reset" value="empty form">
+
+
+    </form>
+</body>
+
+</html>
