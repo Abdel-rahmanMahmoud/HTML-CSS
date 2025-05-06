@@ -1,4 +1,4 @@
-# Zero Web School assignments and coding challenges 
+# ElZero Web School assignments and coding challenges 
 
 ## 📝 Description  
 This repository contains my complete collection of , assignments, and coding challenges completed through the **Zero Web School** program (web platform & YouTube curriculum). All solutions were built from scratch while following their structured learning path, with added personal improvements and custom features.
